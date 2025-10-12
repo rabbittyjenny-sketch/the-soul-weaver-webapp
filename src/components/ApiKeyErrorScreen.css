@@ -1,0 +1,49 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+*/
+
+.api-key-error-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: #1a0537;
+    background: linear-gradient(135deg, #1a0537 0%, #4a0d66 100%);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .api-key-error-screen .error-icon {
+    font-size: 64px;
+    color: var(--Red-400);
+    margin-bottom: 1.5rem;
+  }
+  
+  .api-key-error-screen .error-title {
+    font-size: 28px;
+    margin-bottom: 1rem;
+  }
+  
+  .api-key-error-screen .error-message {
+    font-size: 18px;
+    color: var(--Neutral-80);
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .api-key-error-screen .error-details {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-stroke);
+    color: var(--Neutral-90);
+    max-width: 100%;
+    overflow-wrap: break-word;
+    font-family: var(--font-family-mono);
+  }
+  

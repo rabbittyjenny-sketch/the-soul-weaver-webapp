@@ -1,0 +1,106 @@
+.onboarding-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  color: var(--gray-300);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.onboarding-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 450px;
+  padding: 2rem;
+  background-color: rgba(28, 31, 33, 0.7);
+  /* Neutral-10 with transparency */
+  border: 1px solid var(--border-stroke);
+  border-radius: 16px;
+  color: var(--Neutral-80);
+  backdrop-filter: blur(10px);
+}
+
+.onboarding-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.onboarding-subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 600px;
+  color: var(--Neutral-80);
+}
+
+.onboarding-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.onboarding-form-container input[type="email"],
+.onboarding-form-container input[type="text"],
+.onboarding-form-container input[type="date"] {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--Neutral-5);
+  border: 1px solid var(--Neutral-30);
+  border-radius: 8px;
+  font-size: 16px;
+  color: var(--text);
+  transition: all 0.3s ease-in-out;
+}
+
+.onboarding-form-container input[type="email"]:focus,
+.onboarding-form-container input[type="text"]:focus,
+.onboarding-form-container input[type="date"]:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 10px rgba(161, 228, 242, 0.5);
+}
+
+
+.onboarding-form-container input[type="date"] {
+  color-scheme: dark;
+}
+
+.onboarding-form-container button {
+  padding: 14px 24px;
+  background-color: var(--Blue-500);
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--Neutral-5);
+  align-self: center;
+  border: 1px solid var(--Blue-400);
+  box-shadow: 0 4px 15px rgba(31, 148, 255, 0.3);
+  background-size: 200% 100%;
+  transition: background-position 0.5s ease-out, transform 0.2s, box-shadow 0.2s;
+}
+
+.onboarding-form-container button:hover:not(:disabled) {
+  background-image: linear-gradient(to right, var(--Blue-400), var(--Blue-500), #8e44ad, var(--Blue-500));
+  background-position: 100% 0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(31, 148, 255, 0.4);
+}
+
+.onboarding-form-container button:disabled {
+  background-color: var(--Neutral-30);
+  color: var(--Neutral-50);
+  transform: none;
+  box-shadow: none;
+}
+
+.form-error-message {
+  color: var(--Red-400);
+  font-size: 14px;
+  text-align: left;
+  margin-top: -1rem;
+}
